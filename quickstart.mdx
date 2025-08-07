@@ -1,97 +1,120 @@
 ---
-title: 'Quickstart'
-description: 'Start building awesome documentation in under 5 minutes'
+title: 'Quick Start'
+description: 'Get started with AIde in under 5 minutes'
 ---
 
-## Setup your development
+# Get Started with AIde
 
-Learn how to update your docs locally and deploy them to the public.
+Ready to reclaim your time from pointless busywork? Here's everything you need to know to start using AIde effectively.
 
-### Edit and preview
+## Create Your Account
+
+<Steps>
+  <Step title="Sign Up">
+    Visit [aide.gg](https://aide.gg) and create your account. You can start with our Free plan to try out the service.
+  </Step>
+  <Step title="Choose Your Plan">
+    - **Free Plan**: 10 DeltaMath submissions per week at maximum speed
+    - **Plus Plan**: 50 submissions per week with speed regulation (coming soon)
+    
+    See our [Plan Limits](/limits) page for detailed comparisons.
+  </Step>
+</Steps>
+
+## Using AIde with DeltaMath
+
+### Basic Setup
 
 <AccordionGroup>
-  <Accordion icon="github" title="Clone your docs locally">
-    During the onboarding process, we created a repository on your Github with
-    your docs content. You can find this repository on our
-    [dashboard](https://dashboard.mintlify.com). To clone the repository
-    locally, follow these
-    [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-    in your terminal.
+  <Accordion icon="link" title="Connect Your DeltaMath Account">
+    1. Log into your DeltaMath account in your browser
+    2. Navigate to the assignment you want completed
+    3. Copy the assignment URL from your browser
+    4. Paste it into AIde's dashboard
   </Accordion>
-  <Accordion icon="rectangle-terminal" title="Preview changes">
-    Previewing helps you make sure your changes look as intended. We built a
-    command line interface to render these changes locally. 
-    1. Install the
-    [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the
-    documentation changes locally with this command: ``` npm i -g mintlify ```
-    2. Run the following command at the root of your documentation (where
-    `docs.json` is): ``` mintlify dev ```
-    <Note>
-      If you’re currently using the legacy ```mint.json``` configuration file, please update the Mintlify CLI:
-
-
-      ```npm i -g mintlify@latest```
-      And run the new upgrade command in your docs repository:
-
-      ```mintlify upgrade```
-      You should now be using the new ```docs.json``` configuration file. Feel free to delete the ```mint.json``` file from your repository.
-    </Note>
+  
+  <Accordion icon="settings" title="Configure Your Preferences">
+    **Free Plan Users:**
+    - Assignments complete at maximum speed (fastest completion, higher detection risk)
+    
+    **Plus Plan Users:**
+    - Choose your completion speed when the speed regulator launches
+    - Set custom timing patterns for different assignment types
   </Accordion>
 </AccordionGroup>
 
-### Deploy your changes
+### Running Your First Assignment
 
-<AccordionGroup>
+<Steps>
+  <Step title="Submit Assignment URL">
+    Paste your DeltaMath assignment link into the AIde dashboard and hit submit.
+  </Step>
+  <Step title="Monitor Progress">
+    Watch real-time progress as AIde works through your assignment. You'll see:
+    - Problems completed
+    - Current accuracy rate  
+    - Estimated time remaining
+  </Step>
+  <Step title="Review Results">
+    Once complete, you'll get a summary showing:
+    - Total problems solved
+    - Final score achieved
+    - Time taken for completion
+  </Step>
+</Steps>
 
-<Accordion icon="message-bot" title="Install our Github app">
-  Our Github app automatically deploys your changes to your docs site, so you
-  don't need to manage deployments yourself. You can find the link to install on
-  your [dashboard](https://dashboard.mintlify.com). Once the bot has been
-  successfully installed, there should be a check mark next to the commit hash
-  of the repo.
-</Accordion>
-<Accordion icon="rocket" title="Push your changes">
-  [Commit and push your changes to
-  Git](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository#about-git-push)
-  for your changes to update in your docs site. If you push and don't see that
-  the Github app successfully deployed your changes, you can also manually
-  update your docs through our [dashboard](https://dashboard.mintlify.com).
-</Accordion>
-
-</AccordionGroup>
-
-## Update your docs
-
-Add content directly in your files with MDX syntax and React components. You can use any of our components, or even build your own.
+## Best Practices
 
 <CardGroup>
+  <Card title="Timing Considerations" icon="clock">
+    **Free Plan**: Be aware that maximum speed completion may be more noticeable to teachers who monitor completion times.
+    
+    **Plus Plan**: Use speed regulation to match your typical work patterns when available.
+  </Card>
 
-<Card title="Add Content With MDX" icon="file" href="/essentials/markdown">
-  Add content to your docs with MDX syntax.
-</Card>
+  <Card title="Assignment Selection" icon="target">
+    AIde works best on routine practice assignments rather than assessments that require original thinking or explanations.
+  </Card>
 
-<Card
-  title="Add Code Blocks"
-  icon="square-code"
-  href="/essentials/code"
->
-  Add code directly to your docs with syntax highlighting.
-</Card>
+  <Card title="Account Security" icon="shield">
+    Never share your DeltaMath login credentials. AIde works by automating your browser session, not by accessing your account directly.
+  </Card>
 
-<Card
-  title="Add Images"
-  icon="image"
-  href="/essentials/images"
->
-  Add images to your docs to make them more engaging.
-</Card>
-
-<Card
-  title="Add Custom Components"
-  icon="puzzle-piece"
-  href="/essentials/reusable-snippets"
->
-  Add templates to your docs to make them more reusable.
-</Card>
-
+  <Card title="Stay Updated" icon="bell">
+    Follow our updates for new features, especially the Plus plan's speed regulator and future platform expansions.
+  </Card>
 </CardGroup>
+
+## Troubleshooting Common Issues
+
+<AccordionGroup>
+  <Accordion icon="exclamation-triangle" title="Assignment Won't Start">
+    - Make sure you're logged into DeltaMath in the same browser
+    - Check that the assignment URL is copied correctly
+    - Verify you have submissions remaining on your plan
+  </Accordion>
+  
+  <Accordion icon="pause" title="Completion Stopped Midway">
+    - Check your internet connection
+    - Make sure your browser hasn't been closed
+    - Contact support if the issue persists
+  </Accordion>
+  
+  <Accordion icon="question" title="Unexpected Results">
+    - AIde aims for high accuracy but may occasionally get problems wrong
+    - Review completed assignments to understand any errors
+    - Report persistent accuracy issues to help us improve
+  </Accordion>
+</AccordionGroup>
+
+## What's Next?
+
+- **Understand the Philosophy**: Read [Why AIde Exists](/why-aide-exists) to understand our approach to education and student autonomy
+- **Check Plan Details**: Review [Plan Limits](/limits) to see if upgrading makes sense for your usage
+- **Stay Informed**: Join our community for updates on new features and platform expansions
+
+## Need Help?
+
+Reach out to our support team at [support@aide.gg](mailto:support@aide.gg) or check our FAQ section for common questions.
+
+Ready to focus your time on learning that actually matters? Let's get started.
